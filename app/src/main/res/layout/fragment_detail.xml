@@ -3,11 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".view.ListFragment">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/iv_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter"
+            android:minHeight="200dp" />
+        
+        <TextView
+            android:id="@+id/tv_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_details"
+            android:text="Dog Name"
+            style="@style/Title"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/tv_details_purpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_details_name"
+            android:text="Purpose"
+            style="@style/Text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/tv_details_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_details_purpose"
+            android:text="Temperament"
+            style="@style/Text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/tv_details_lifespan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_details_temp"
+            android:text="Lifespan"
+            style="@style/Text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp" />
+
+    </RelativeLayout>
 
 </layout>
